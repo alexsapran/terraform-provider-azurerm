@@ -26,7 +26,7 @@ func resourceArmVirtualMachineScaleSet() *schema.Resource {
 		Update:        resourceArmVirtualMachineScaleSetCreateUpdate,
 		Delete:        resourceArmVirtualMachineScaleSetDelete,
 		MigrateState:  resourceVirtualMachineScaleSetMigrateState,
-		SchemaVersion: 1,
+		SchemaVersion: 2,
 
 		Importer: &schema.ResourceImporter{
 			State: schema.ImportStatePassthrough,
